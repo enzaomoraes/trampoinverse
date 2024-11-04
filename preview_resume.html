@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Adapted Resume Preview</title>
+</head>
+<body>
+    <h2 class="title">Adapted Resume Preview</h2>
+    <div class="resume-preview">{{ adapted_resume | safe }}</div>
+    <form action="{{ url_for('download_adapted_resume', resume_id=resume.id) }}" method="POST" class="download-form">
+        <button type="submit" class="btn">Download Adapted Resume</button>
+    </form>
+    <a href="{{ url_for('dashboard') }}" class="back-link">Back to Dashboard</a>
+</body>
+</html>

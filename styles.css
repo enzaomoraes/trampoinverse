@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e limpa */
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Cinza claro */
+    color: #333;
+}
+
+h1, h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #000; /* Bordas pretas */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f9f9f9; /* Fundo leve para cabeçalhos */
+}
+
+.btn {
+    display: inline-block; /* Permite a personalização do botão */
+    padding: 10px 20px; /* Espaçamento interno para botões */
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: 1px solid #007bff; /* Bordas azuis */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Efeitos de transição */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    text-align: center; /* Centraliza texto */
+    text-decoration: none; /* Remove sublinhado de links */
+    margin: 5px 0; /* Margem entre botões */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="password"], input[type="file"], textarea {
+    width: 80%; /* Tamanho reduzido das caixas de texto */
+    max-width: 500px; /* Largura máxima para caixas de texto */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #000; /* Bordas pretas */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    box-sizing: border-box; /* Para incluir o padding na largura total */
+}
+
+textarea {
+    height: 100px; /* Altura fixa para o textarea */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9; /* Fundo leve para itens da lista */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #000; /* Bordas pretas */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s; /* Efeito de transição para sombra */
+}
+
+ul li:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra ao passar o mouse */
+}
+
+/* Estilização específica para o preview de currículos */
+.resume-preview {
+    background: #fff; /* Fundo branco para destaque */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #000; /* Bordas pretas */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    margin: 20px 0; /* Margem ao redor do preview */
+    white-space: pre-wrap; /* Mantém a formatação do texto */
+    overflow-wrap: break-word; /* Quebra de linha adequada */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    font-size: 14px; /* Tamanho da fonte do preview */
+}

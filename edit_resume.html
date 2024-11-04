@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Edit Resume Name</title>
+</head>
+<body>
+    <h2>Edit Resume Name</h2>
+    <form method="POST">
+        <label for="name">New Name:</label>
+        <input type="text" name="name" value="{{ resume.name }}" required>
+        <br>
+        <button type="submit" class="btn">Save Changes</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- adapt_resume.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Adapt Resume</title>
+</head>
+<body>
+    <form method="POST">
+        <h1>Adapt Resume</h1>
+        <h2>Current Resume: {{ resume.name }}</h2>
+        <textarea name="job_description" placeholder="Enter job description..." required></textarea>
+        <button type="submit" class="btn">Adapt Resume</button>
+    </form>
+
+    <h2>Edit Resume Name</h2>
+    <form method="POST">
+        <label for="name">New Name:</label>
+        <input type="text" name="name" value="{{ resume.name }}" required>
+        <br>
+        <button type="submit" class="btn">Save Changes</button>
+    </form>
+</body>
+</html>
